@@ -3,8 +3,7 @@ define([
   'underscore',
   'backbone',
   'fitText',
-  'text!templates/jumbotronTemplate.html',
-  'js/libs/fitText/fitText.js'
+  'text!templates/jumbotronTemplate.html'
 ], function($, _, Backbone, fitText, jumbotronTemplate){
   var JumbotronView = Backbone.View.extend({
     initialize: function(){
