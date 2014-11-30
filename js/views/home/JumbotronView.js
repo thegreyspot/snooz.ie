@@ -4,7 +4,7 @@ define([
   'backbone',
   'fitText',
   'text!templates/jumbotronTemplate.html',
-  '/js/libs/fitText/fitText.js'
+  'js/libs/fitText/fitText.js'
 ], function($, _, Backbone, fitText, jumbotronTemplate){
   var JumbotronView = Backbone.View.extend({
     initialize: function(){
