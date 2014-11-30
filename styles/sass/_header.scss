@@ -1,0 +1,77 @@
+core-drawer-panel:narrow paper-tabs{
+  display: none;
+}
+.main_header{
+  $header-bg: #025A86;
+  background: $header-bg;
+  color: white;
+  background: url(/images/home/DSC_3459.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  &.tall{
+      height: 300px;
+  }
+  &:not(.tall){
+      summary{
+        display: none;
+      }
+  }
+
+  paper-tabs{
+    display: none !important;
+  }
+
+  header{
+    margin: 0 auto;
+    h1{
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 4em;
+      letter-spacing: 4px;
+      font-weight: 900;
+      @include transform(rotate(-2deg));
+      @include transition(font-size, 0.1s);
+      //margin-bottom: 0px;
+      //text-shadow: 6px -2px 1px darken($header-bg, 10);;
+    }
+    summary{
+      font-family: 'Raleway Thin';
+      color: lighten($header-bg, 60);
+    }
+  }
+  &:not(.tall){
+    h1{
+      font-size: 1em;
+      @include transform(rotate(0deg));
+    }
+  }
+  /*ul{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5em;
+    li{
+      width: 100%;
+      a{
+        color: white;
+        width: 100%;
+        display: block;
+        padding: 0.5em 0;
+        &:hover{
+          background: lighten($header-bg, 20);
+          text-decoration: none;
+        }
+      }
+    }
+  }*/
+}
+
+.drawer{
+  background: rgb(229, 229, 229);
+
+  core-toolbar{
+    background-color: #021439;
+    color: white;
+  }
+}

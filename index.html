@@ -1,0 +1,44 @@
+<!doctype html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 desktop closed"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 desktop closed"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 desktop closed"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 desktop closed"> <![endif]-->
+<!--[if gt IE 9]>  <html class="desktop"> <![endif]-->
+<!--[if !IE]><!--> <html class="desktop closed" itemtype="http://schema.org/Product"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Snooz.ie - Sounds and noises that make you wander</title>
+	<meta name="description" content="">
+	<meta name="author" content="Michael Humphries">
+	<meta name="Developer" content="Michael Humphries">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<!--<link rel="stylesheet" href="styles/css/bootstrap/bootstrap.min.css">-->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<script data-main="js/main" src="js/libs/require/require.js"></script>
+	<script data-main="js/main" src="js/libs/browserDetect.js"></script>
+	<!-- polymer -->
+	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="elements.html">
+	<link rel="stylesheet" href="styles/css/base.min.css">
+</head>
+<body id="container" fullbleed layout vertical>
+		<core-drawer-panel responsiveWidth="9999999px" id="drawerPanel">
+			<core-header-panel class="drawer" drawer>
+				<core-toolbar>Menu</core-toolbar>
+				<core-menu fullbleed>
+					<paper-item><a href="Series" layout horizontal center>Series</a></paper-item>
+					<paper-item><a href="Feed" layout horizontal center>Feed</a></paper-item>
+					<paper-item><a href="About" layout horizontal center>About</a></paper-item>
+				</core-menu>
+			</core-header-panel>
+			<core-header-panel class="main" mode="waterfall-tall" main>
+				<div class="content main_content"></div>
+			</core-header-panel>
+		</core-drawer-panel>
+</body>
+</html>

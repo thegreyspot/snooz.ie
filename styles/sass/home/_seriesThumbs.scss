@@ -1,0 +1,98 @@
+@import "bootstrap/bootstrap/_variables.scss";
+
+.series_thumbs{
+  width: 100%;
+  margin-bottom: 9900px;
+  .serie_thumb{
+    height: 390px;
+    min-width: 285px;
+    margin: 15px;
+
+    a{
+      background-repeat: no-repeat;
+      background-color: rgba(23, 23, 23, 0.75);
+      background-blend-mode: overlay;
+      @include transition(background .5s ease-out);
+      width: 100%;
+      height: 100%;
+      @include display-flex();
+      @include align-items(center);
+      @include justify-content(center);
+      .circle{
+        width: 13em;
+        height: 13em;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 2px transparentize(gold, 0.54);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+          color: gold;
+          font-size: 24px;
+          font-family: 'Raleway Thin';
+        }
+      }
+    }//a
+    a:hover{
+      background-color: rgba(23, 23, 23, 0);
+
+      .circle{
+        background:  transparentize(gold, 0.54);
+        box-shadow: none;
+        h1{
+          color: white;
+        }
+      }
+    }
+  }//.serie_thumb
+}
+
+
+/* ==========================================================================
+   630 - Horizontal smart phone
+   ========================================================================== */
+@media only screen and (min-width: 630px){
+  .series_thumbs{
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include flex-flow(row wrap);
+    @include align-content(flex-end);
+  }
+}
+
+/* ==========================================================================
+   768 - col-sm
+   ========================================================================== */
+@media only screen and (min-width: $screen-sm){
+  .series_thumbs{
+    .serie_thumb{
+      min-width: 325px;
+    }
+  }
+}//@media
+
+/* ==========================================================================
+   992 - col-md
+   ========================================================================== */
+@media only screen and (min-width: $screen-md){
+  .series_thumbs{
+    .serie_thumb{
+      min-width: 300px;
+    }
+  }
+}//media
+
+/* ==========================================================================
+   1200 - col-lg
+   ========================================================================== */
+@media only screen and (min-width: $screen-lg){
+  .series_thumbs{
+    .serie_thumb{
+      min-width: 370px;
+    }
+  }
+}//1024px

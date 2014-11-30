@@ -1,0 +1,40 @@
+html{
+  min-width: 300px;
+  height: 100%;
+}
+body{
+  height: 100%;
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #171717;
+  font-family: "Alegreya Sans",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  min-width: 300px;
+}
+
+*{
+   @include box-sizing(border-box);
+}
+a{
+  text-decoration: none;
+}
+h1{
+  margin: 0;
+}
+.main_content{
+  clear: both;
+  width: 100%;
+}
+
+.title{
+  width: 100%;
+  margin: 45px 3px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+:host{
+  margin: 0;
+}

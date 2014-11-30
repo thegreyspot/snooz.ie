@@ -1,0 +1,27 @@
+<!-- Indicators -->
+<ol class="carousel-indicators">
+	<% isFirst = true;
+	_.each(images, function(image, i){ %>
+		<li class="<%= (isFirst?'active':'') %>" data-target="#carousel_<%= slug %>" data-slide-to="<%= i %>"></li>
+	<% isFirst = false;
+	}); %>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+	<% isFirst = true;
+	_.each(images, function(image){ %>
+		<div class="item <%= (isFirst?'active':'') %>">
+	    	<img src="<%= image %>">
+		</div>
+	<% isFirst = false;
+	}); %>
+</div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel_<%= slug %>" data-slide="prev">
+	<i class="fa fa-angle-left glyphicon-chevron-left"></i>
+</a>
+<a class="right carousel-control" href="#carousel_<%= slug %>" data-slide="next">
+    <i class="fa fa-angle-right glyphicon-chevron-right"></i>
+</a>
